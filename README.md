@@ -10,4 +10,9 @@ So far we find that in processing it can sometimes be effective to drop the phot
 
 I'll be adding more here soon in my efforts to clean up this repo.
 
-This line is a test for working on git command line!!!
+## Structure of this repo
+For now, I'm going to organise my work by Hyperz run. So the older Hyperz run for 4051 galaxies in hzspec and all of its data will be put into a folder called hz-4051-results
+
+The *new* and nice work I'm doing on hzmass will go into an hzmass-results folder I think.
+
+I'll try to keep this up to date but it's mostly just me playing around with git to be honest!
