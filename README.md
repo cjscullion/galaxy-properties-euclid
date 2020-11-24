@@ -8,4 +8,6 @@ The basic idea is to assess the affect of filter set on the resolution of physic
 
 So far we find that in processing it can sometimes be effective to drop the photometric contributions from the LSST u band, as it appears to cause complications at high rest-frame due to what we believe is the outshining phenomenon.
 
-I'll be adding more here soon in my efforts to clean up this repo. 
+I'll be adding more here soon in my efforts to clean up this repo.
+
+This line is a test for working on git command line!!!
