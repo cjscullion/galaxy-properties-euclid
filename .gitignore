@@ -1,3 +1,5 @@
 # GIT IGNORE
 *.cat
 *.~
+*.csv
+*.png
