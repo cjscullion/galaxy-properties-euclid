@@ -1,0 +1,78 @@
+#+options: num:nil, toc:nil
+#+title: n6000_1 HyperZMass Run Log
+#+author: Chris Scullion
+#+subtitle: A place for keeping track of this run of hzmass. 
+
+* Catalog details
+6000 objects, all within $15 < m_{VIS} < 24.5 (m_{VIS_{lim}} = (24.5)$
+Gaussian photometric errors applied with SNR = 10. 
+
+Redshifts range from 0 < z < 6
+Ages from 0 < Age [Gyr] < 13
+0 < A_{\nu} < 2.1?
+4 discrete rates and 3 metallicities, half solar, solar, and twice solar.
+
+Let's whack it in already!
+
+* File list:
+** =AOVSED=
+File-path containing the spectrum of Vega.
+
+** =FILTERS_RES=
+File-path containing the filter transmission functions.
+
+** =FILTERS_FILE=
+col 1 = id number for each filter in the FILTER_RES file.
+col 2 = corrections to Vega mags from catalog such that $m_{Vega} = m_{cat} + m_{corr}$.
+col 3 = rule applied in the case of undetected objects:
+0 -> filter will not be taken into account.
+
+1 -> flux in this filter is set to $F_{obs} = 0$ with error corresponding to the flux deduced from the limiting mag in the fourth column i.e. $\Delta F_{obs} = F_{lim}$.
+
+2 -> flux in this filter and the associated $1 \sigma$ error are set to $F_{lim}/2$.
+
+3 -> flux in this filter and the associated error are computed from the limiting mag $m_{lim}$ an from the error $\Delta m_{lim}$ given in columns four and five.
+
+We have already filtered out objects with 'undetected' magnitudes, so it shouldn't matter what we choose. But let's choose 1.
+ 
+** =TEMPLATES_FILE=
+File-path to the file which contains further file-paths to the templates. 
+
+** =CATALOG_FILE=
+
+
+** =OUTPUT_FILE=
+
+
+** =SED_OBS_FILE, SED_TEMP_FILE, LOGPHOT_FILE, ZPHOT_FILE, CATPHOT_FILE=
+*** =OUTPUT_FILE.obs_sed=
+The observed SEDs, given as the mean integreated fluxes through the photometric system, and the corresponding errors. 
+=id=, $\text{[} F_{obs}(i), i=1, n_{filt} \text{]}$, $\text{[} \Delta F_{obs}(i), i=1, n_{filt} \text{]}$
+
+*** =OUTPUT_FILE.temp_sed=
+*** =OUTPUT_FILE.log_phot=
+*** =OUTPUT_FILE.z_phot=
+*** =OUTPUT_FILE.cat_phot=
+** =MAG_TYPE=
+** =ERR_MAG_MIN=
+** =Z_MIN & Z_MAX=
+** =REDDENING_LAW=
+** =AV_MIN & AV_MAX=
+** =LY_FOREST=
+** =H0=
+** =OMEGA_M=
+** =OMEGA_V=
+** =FILT_M_ABS=
+** =CATALOG_TYPE=
+** =Z_STEP=
+** =Z_STEP_TYPE=
+** =AV_STEP=
+** =AGE_CHECK=
+** =PROB_THRESH=
+** =OUTPUT_TYPE=
+** =Z_CLUSTER=
+** =M_ABS_MIN=
+** =M_ABS_MAX=
+** =MATRIX=
+** =SPECTRUM=
+** =EBV_MW=
